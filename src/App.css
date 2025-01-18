@@ -1,23 +1,63 @@
-.chatbot-container {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* Optional: Add a background color */
-  padding: 20px;
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: 10px;
-  height: 600px;
+/* Make the chatbot button float at the bottom-right */
+.chatbot-float-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for aesthetic */
-  margin-top: 10%;
-  margin-left: 68%;
 }
 
+/* Style for the chatbot toggle button */
+.chatbot-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Message that appears before the chatbot is opened */
+.chatbot-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeInOut 2s infinite; /* Animation */
+}
+
+/* Keyframes for fadeInOut effect */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Chatbot container when open */
+.chatbot-container {
+  position: fixed;
+  bottom: 80px; /* Adjust based on your button size */
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  z-index: 9999;
+}
+
+/* Chat window styling */
 .chat-window {
   width: 100%;
   height: 100%;
-  background-color: #fff;
-  border-radius: 10px; /* Ensures the iframe fits into a rounded window */
-  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
