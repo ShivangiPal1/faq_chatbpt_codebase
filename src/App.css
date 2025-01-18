@@ -1,0 +1,23 @@
+.chatbot-container {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Optional: Add a background color */
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for aesthetic */
+  margin-top: 10%;
+  margin-left: 68%;
+}
+
+.chat-window {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px; /* Ensures the iframe fits into a rounded window */
+  overflow: hidden;
+}
