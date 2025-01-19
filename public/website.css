@@ -242,7 +242,8 @@
 /*----------------------------FEATURE-----------------------------*/
 ul 
 { 
- 
+  justify-content: space-between; 
+  display: flex; 
   list-style: none;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -291,25 +292,27 @@ ul div li a
 
 ul li .box1
 {
-  background-color:rgb(255, 58, 101);
+  background-color:rgb(24, 87, 112);
 }
 ul li .box2
 {
-  background-color:rgb(255, 93, 34);
+  background-color:rgb(191, 134, 72);
 }
 ul li .box3
 {
-  background-color:rgb(16, 206, 16);
+  background-color:rgb(109, 54, 70);
 }
 ul li .box4
 {
-  background-color:rgb(47, 196, 196);
+  background-color:rgb(36, 50, 71);
 }
     
 /*-----------------------------CONTACT-----------------------------*/
 .contact
 {
-  display:inline;
+  display: flex; /* Enables Flexbox */
+  justify-content: flex-end; /* Aligns items to the right */
+  align-items: center; /
 }
 .contact .icon
 {
@@ -322,6 +325,7 @@ ul li .box4
 }
 .contact .details
 {
+  text-align: center; 
   float: right;
   text-align: right;
   margin-right:35%;
@@ -330,7 +334,7 @@ ul li .box4
 
 /*-----------------------------FOOTER-----------------------------*/
 footer{
-  background-color:rgb(47, 196, 196); 
+  background-color:rgb(64, 72, 100); 
   width:100%;
   padding:3% 8% 3% 8%;
 }
