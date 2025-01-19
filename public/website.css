@@ -11,6 +11,10 @@
     position: fixed;/* Set the navbar to fixed position */
 }
 
+* {
+  box-sizing: border-box; 
+}
+
   /* Style the links inside the navigation bar */
   .topnav a{
     float: left;
@@ -38,13 +42,16 @@
   
   /* Add an active class to highlight the current page */
   /* Navigation Bar Styles */
-.topnav {
-  display: flex;
-  justify-content: space-between;  /* To space out items */
-  align-items: center;  /* To vertically center the items */
-  background-color: #fff;
-  padding: 10px 20px;
-}
+  .topnav {
+    display: flex;
+    justify-content: space-between; /* To space out items */
+    align-items: center;           /* To vertically center the items */
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 100%;                   /* Ensure it spans the full width of the viewport */
+    box-sizing: border-box;        /* Include padding in the element's total width */
+  }
+  
 
 .topnav a {
   color: black;
